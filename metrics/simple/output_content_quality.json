@@ -1,0 +1,5 @@
+{
+    "name": "output_content_quality",
+    "description": "Output content quality means whether the discourse (text) is any good.",
+    "scoring": "0: bad content -- If the text sounds repetitive (or is non-factual/inconsistent or it's not in the given language, or seems to have been web-scrapped); 1: OK content, but some flaws found -- If it's ok (grammatical, lexically, vocab is good) but kind of goes around in circles; 2: good or above content."
+}

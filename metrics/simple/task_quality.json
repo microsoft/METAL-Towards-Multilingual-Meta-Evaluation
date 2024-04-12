@@ -1,0 +1,5 @@
+{
+    "name": "task_quality",
+    "description": "The quality of the output is related to the task. We are evaluating whether the model did what the task asked.",
+    "scoring": "0: the model did not do what the task asked; 1: mostly did what the task asked, with some errors; 2: did what the task asked."
+}

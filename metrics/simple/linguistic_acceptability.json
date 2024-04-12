@@ -1,0 +1,5 @@
+{
+    "name": "linguistic_acceptability",
+    "description": "Linguistic acceptability means does this sound right to a native speaker?, not does this stick to the rules of the grammar.",
+    "scoring": "0: not acceptable; 1: some weird things but ok; 2: no errors found/acceptable."
+}

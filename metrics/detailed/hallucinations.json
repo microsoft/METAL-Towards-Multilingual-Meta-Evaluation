@@ -1,0 +1,16 @@
+{
+    "name": "hallucinations",
+    "description": "Hallucinations assess the extent to which a model's output remains anchored to, and consistent with, the input content provided. Text with hallucinations while linguistically fluent, are factually baseless or counterfactual in relation to the input. These hallucinations can manifest as additions, omissions, or distortions, and might lead to outputs that are misleading or factually incorrect. This metric serves as a check against unwarranted deviations from the ground truth provided in the input. The scoring rubric is described below, with a few possible reasons (which might not be exhaustive) for a given score.",
+    "scoring": {
+        "0": {
+            "(a)": "The model's output is strictly aligned with and grounded in the information provided in the input.",
+            "(b)": "No evidence of added, omitted, or distorted facts that weren't part of the original content.",
+            "(c)": "Maintains the integrity of the original information without any unwarranted extrapolations."
+        },
+        "1": {
+            "(a)": "The output introduces statements, claims, or details that weren't present or implied in the input.",
+            "(b)": "Contains counterfactual information that directly conflicts with the input content.",
+            "(c)": "Demonstrates unexplained deviations, extrapolations, or interpretations not grounded in the provided data."
+        }
+    }
+}

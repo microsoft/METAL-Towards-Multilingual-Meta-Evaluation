@@ -1,0 +1,24 @@
+{
+    "name": "output_content_quality",
+    "description": "Output Content Quality measures the overall caliber of the content generated, factoring in its relevance, clarity, originality, and linguistic fluency. High-quality output should not only be grammatically sound but should also convey information in an articulate, coherent, and engaging manner without any evidence of plagiarism, redundancy, or artificiality. This metric ensures that the produced content meets the expectations of originality, clarity, and contextual relevance in addition to linguistic fluency. The scoring rubric is described below, with a few possible reasons (which might not be exhaustive) for a given score.",
+    "scoring": {
+        "0": {
+            "(a)": "The output is in a language different from the intended/requested one.",
+            "(b)": "Content appears scraped from the web, giving a plagiarized feel.",
+            "(c)": "The output is repetitive or overly redundant.",
+            "(d)": "Displays artifacts of poor machine translation."
+        },
+        "1": {
+            "(a)": "The content is generally accurate in terms of grammar and word choice.",
+            "(b)": "Sounds unnatural or awkward in the language, lacking smoothness.",
+            "(c)": "May have minor discrepancies in content clarity or relevance.",
+            "(d)": "Shows traces of generative patterns or repetitiveness, albeit less pronounced than level 0."
+        },
+        "2": {
+            "(a)": "The text shows a high level of originality and authenticity.",
+            "(b)": "Demonstrates clear, coherent, and contextually appropriate content.",
+            "(c)": "Engages the reader with natural linguistic flow and rhythm.",
+            "(d)": "Absence of any noticeable generative artifacts or awkward."
+        }
+    }
+}

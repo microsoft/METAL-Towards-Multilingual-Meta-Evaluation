@@ -1,0 +1,21 @@
+{
+    "name": "linguistic_acceptability",
+    "description": "Linguistic acceptability pertains to the degree to which a given language structure (e.g., phrase, sentence, discourse) aligns with the implicit norms and rules of a native speaker's linguistic intuition. In the study of language, it's distinct from 'grammaticality', which is a stricter and narrower concept based on the prescriptive rules of a language. Linguistic acceptability, on the other hand, captures broader native-speaker intuitions and encompasses factors like fluency, idiomacy, and appropriateness in context. In the context of language models, evaluating linguistic acceptability involves assessing the output of the model not just for its adherence to grammar rules, but for its overall fit within the natural, expected, and intuitive contours of fluent human language. The scoring rubric is described below, with a few possible reasons (which might not be exhaustive) for a given score.",
+    "scoring": {
+        "0": {
+            "(a)": "Sentences that lack clear syntactic structure.",
+            "(b)": "Usage of non-existent or incorrect words.",
+            "(c)": "Grossly inappropriate word choices for a given context."
+        },
+        "1": {
+            "(a)": "Overly verbose or stilted phrasing.",
+            "(b)": "Minor grammatical errors that do not impede understanding.",
+            "(c)": "Use of a word that's technically correct but not the most appropriate for context."
+        },
+        "2": {
+            "(a)": "Seamless integration of contextually relevant vocabulary",
+            "(b)": "Effective use of idiomatic expressions without sounding forced.",
+            "(c)": "Sentences that reflect natural rhythm, emphasis, and intonation of spoken language."
+        }
+    }
+}

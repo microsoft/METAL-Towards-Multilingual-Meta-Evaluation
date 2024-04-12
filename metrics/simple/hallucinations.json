@@ -1,0 +1,5 @@
+{
+    "name": "hallucinations",
+    "description": "Hallucination refers to the generation of text that is untrue, fabricated, inconsistent with the given input, deviates from generally accepted knowledge, or makes unverifiable claims.",
+    "scoring": "0: No hallucinations in the text; 1: text has hallucinations"
+}
