@@ -30,7 +30,7 @@ pip install pandas python-dotenv langchain langchain-community guidance
 │   ├── bad_prompt.md
 │   └── good_prompt.md
 ├── data
-│   └── metal_dataset.json
+│   └── METAL_dataset.json
 ├── metrics
 │   ├── detailed
 │   │   ├── hallucinations.json
@@ -67,17 +67,11 @@ pip install pandas python-dotenv langchain langchain-community guidance
 ```json
 {
     "<checksum>": {
-        "ID": <XL-Sum ID>,
+        "XLSum_ID": <XLSum ID>,
         "Index": <Index>,
         "Type": <Type of Summary (Good or Bad)>,
         "Language": <Language>,
-        "Sentence": <Passage>,
         "Generated_Summary": <GPT-4 generated summary>,
-        "Reference_Summary": <Original XL-Sum summary>,
-        "Automated_Scores": {
-            "rougeL": <ROUGE score between the generated summary and passage>,
-            "rougeLsum": <ROUGE score between the generated summary and reference summary>
-        },
         "Human_Scores": {
             "linguistic_acceptability": {
                 "A1": <Score by Annotator-1>,
