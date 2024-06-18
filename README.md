@@ -1,6 +1,6 @@
 # METAL: Towards Multilingual Meta-Evaluation
 
-**Official Repository for ["METAL: Towards Multilingual Meta-Evaluation"](https://arxiv.org/abs/2404.01667) (To be presented at NAACL 2024)**
+**Official Repository for ["METAL: Towards Multilingual Meta-Evaluation"](https://aclanthology.org/2024.findings-naacl.148/) (Presented at NAACL 2024)**
 
 ## Abstract
 With the rising human-like precision of Large Language Models (LLMs) in numerous tasks, their utilization in a variety of real-world applications is becoming more prevalent. Several studies have shown that LLMs excel on many standard NLP benchmarks. However, it is challenging to evaluate LLMs due to test dataset contamination and the limitations of traditional metrics. Since human evaluations are difficult to collect, there is a growing interest in the community to use LLMs themselves as reference-free evaluators for subjective metrics. However, past work has shown that LLM-based evaluators can exhibit bias and have poor alignment with human judgments. In this study, we propose a framework for an end-to-end assessment of LLMs as evaluators in multilingual scenarios. We create a carefully curated dataset, covering 10 languages containing native speaker judgments for the task of summarization. This dataset is created specifically to evaluate LLM-based evaluators, which we refer to as meta-evaluation (METAL). We compare the performance of LLM-based evaluators created using GPT-3.5-Turbo, GPT-4, and PaLM2. Our results indicate that LLM-based evaluators based on GPT-4 perform the best across languages, while GPT-3.5-Turbo performs poorly. Additionally, we perform an analysis of the reasoning provided by LLM-based evaluators and find that it often does not match the reasoning provided by human judges.
@@ -51,7 +51,7 @@ pip install pandas python-dotenv langchain langchain-community guidance
 ```
 
 ## Dataset
-- The dataset is available in the `data/` directory. Please refer to our [paper](https://arxiv.org/abs/2404.01667) for the dataset curation methodology, metrics, prompts and annotator instructions.  
+- The dataset is available in the `data/` directory. Please refer to our [paper](https://aclanthology.org/2024.findings-naacl.148/) for the dataset curation methodology, metrics, prompts and annotator instructions.  
 
 - The dataset consists of 100 summaries each, for 10 languages: English (En), French (Fr), Chinese Simplified (Zh), Hindi (Hi), Arabic (Ar), Bengali (Bn), Russian (Ru), Turkish (Tr), Japanese (Ja), and Swahili (Sw). The main text for each summary in our dataset was chosen from XL-Sum [(Hasan et al., 2021)](https://huggingface.co/datasets/csebuetnlp/xlsum). 
 
@@ -160,13 +160,24 @@ pip install pandas python-dotenv langchain langchain-community guidance
 ## Citation
 In you use this dataset, or code-base, please cite our works,
 ```bibtex
-@misc{hada2024metal,
-      title={METAL: Towards Multilingual Meta-Evaluation}, 
-      author={Rishav Hada and Varun Gumma and Mohamed Ahmed and Kalika Bali and Sunayana Sitaram},
-      year={2024},
-      eprint={2404.01667},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{hada-etal-2024-metal,
+    title = "{METAL}: Towards Multilingual Meta-Evaluation",
+    author = "Hada, Rishav  and
+      Gumma, Varun  and
+      Ahmed, Mohamed  and
+      Bali, Kalika  and
+      Sitaram, Sunayana",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2024",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-naacl.148",
+    pages = "2280--2298",
+    abstract = "With the rising human-like precision of Large Language Models (LLMs) in numerous tasks, their utilization in a variety of real-world applications is becoming more prevalent. Several studies have shown that LLMs excel on many standard NLP benchmarks. However, it is challenging to evaluate LLMs due to test dataset contamination and the limitations of traditional metrics. Since human evaluations are difficult to collect, there is a growing interest in the community to use LLMs themselves as reference-free evaluators for subjective metrics. However, past work has shown that LLM-based evaluators can exhibit bias and have poor alignment with human judgments. In this study, we propose a framework for an end-to-end assessment of LLMs as evaluators in multilingual scenarios. We create a carefully curated dataset, covering 10 languages containing native speaker judgments for the task of summarization. This dataset is created specifically to evaluate LLM-based evaluators, which we refer to as meta-evaluation (METAL). We compare the performance of LLM-based evaluators created using GPT-3.5-Turbo, GPT-4, and PaLM2. Our results indicate that LLM-based evaluators based on GPT-4 perform the best across languages, while GPT-3.5-Turbo performs poorly. Additionally, we perform an analysis of the reasoning provided by LLM-based evaluators and find that it often does not match the reasoning provided by human judges.",
 }
 ```
 ```bibtex
